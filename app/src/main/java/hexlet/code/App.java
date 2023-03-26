@@ -12,12 +12,10 @@ public class App {
             Cli.greeting();
         }
         if (command.equals("0")) {
-            System. exit(0);
+            System.exit(0);
         }
         if (command.equals("2")) {
             GameEven.even();
         }
-
-
     }
 }
