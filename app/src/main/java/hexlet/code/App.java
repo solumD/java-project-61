@@ -1,13 +1,14 @@
 package hexlet.code;
 import hexlet.code.games.GameCalc;
 import hexlet.code.games.GameGCD;
+import hexlet.code.games.GameProgression;
 
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
         System.out.println("Please enter the game number and press Enter.\n1 - Greet\n2 - Even\n3 - Calc\n"
-                + "4 - GCD\n0 - Exit");
+                + "4 - GCD\n5 - Progression\n0 - Exit");
         System.out.print("Your choice: ");
         Scanner scanner = new Scanner(System.in);
         String command = scanner.next();
@@ -27,6 +28,9 @@ public class App {
         }
         if (command.equals("4")) {
             GameGCD.gcd();
+        }
+        if (command.equals("5")) {
+            GameProgression.progression();
         }
     }
 }
