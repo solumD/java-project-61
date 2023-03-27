@@ -11,5 +11,5 @@
 #### 2) brain-calc demonstration:
     https://asciinema.org/a/OVy4UgXq3JUrtd5GialO2l5hN
 
-#### 2) brain-gcd demonstration:
+#### 3) brain-gcd demonstration:
     https://asciinema.org/a/dygobM9V0EW1ssUGLxs4uKQ47
