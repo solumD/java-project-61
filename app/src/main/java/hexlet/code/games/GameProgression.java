@@ -11,7 +11,7 @@ public class GameProgression {
         var user = Cli.greeting();
         var j = 0;
         final int end = 3;
-        int fakeend = 5;
+        final int fakeend = 5;
         Scanner scanner = new Scanner(System.in);
         System.out.println("What number is missing in the progression?");
         while (j < end) {
