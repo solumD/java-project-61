@@ -16,3 +16,7 @@
 
 #### 4) brain-progression demonstration:
     https://asciinema.org/a/O91HyLIT1iGXgOgVQjDSdJIld
+
+#### 5) brain-prime demonstration:
+    https://asciinema.org/a/eEMPrIwtFUOnum2fTXWB4Nrtp
+
