@@ -13,8 +13,8 @@ public class GameGCD {
         System.out.println("Find the greatest common divisor of given numbers.");
         while (j < 3) {
             Random random = new Random();
-            int ch1 = random.nextInt(100);
-            int ch2 = random.nextInt(100);
+            int ch1 = random.nextInt(1, 100);
+            int ch2 = random.nextInt(1, 100);
             System.out.println("Question: " + ch1 + " " + ch2);
             var ch = gcd2(ch1, ch2);
             System.out.print("Your answer: ");
