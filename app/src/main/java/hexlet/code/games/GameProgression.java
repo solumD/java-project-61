@@ -15,7 +15,7 @@ public class GameProgression {
         while (j < 3) {
             Random random = new Random();
             int ch1 = random.nextInt(5, 10);
-            int sh = random.nextInt(5, 10);
+            int sh = random.nextInt(7, 10);
             String[] numbers = new String[sh];
             var index = 0;
             for (var i = 0; i < numbers.length - 1; i++) {

@@ -34,6 +34,9 @@ public class GamePrime {
                 break;
             }
         }
+        if (j == 3) {
+            System.out.println("Congratulations, " + user + "!");
+        }
     }
     public static int isPrime(int num) {
         var k = 0;
