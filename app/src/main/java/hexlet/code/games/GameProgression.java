@@ -37,6 +37,7 @@ public class GameProgression {
             } else {
                 System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + qw + "'.");
                 System.out.println("Let's try again, " + user + "!");
+                j = 3;
                 break;
             }
         }
