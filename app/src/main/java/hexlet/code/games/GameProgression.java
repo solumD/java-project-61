@@ -10,12 +10,17 @@ public class GameProgression {
     public static void progression() {
         var user = Cli.greeting();
         var j = 0;
+        int end = 3;
+        int fakeend = 5;
         Scanner scanner = new Scanner(System.in);
         System.out.println("What number is missing in the progression?");
-        while (j < 3) {
+        while (j < end) {
             Random random = new Random();
-            int ch1 = random.nextInt(5, 10);
-            int sh = random.nextInt(7, 10);
+            int randomend = 100;
+            int shstart = 7;
+            int ch1start = 5;
+            int ch1 = random.nextInt(ch1start, randomend);
+            int sh = random.nextInt(shstart, randomend);
             String[] numbers = new String[sh];
             var index = 0;
             for (var i = 0; i < numbers.length - 1; i++) {
@@ -37,11 +42,11 @@ public class GameProgression {
             } else {
                 System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + qw + "'.");
                 System.out.println("Let's try again, " + user + "!");
-                j = 5;
+                j = fakeend;
                 break;
             }
         }
-        if (j == 3) {
+        if (j == end) {
             System.out.println("Congratulations, " + user + "!");
         }
     }

@@ -7,12 +7,14 @@ public class GameCalc {
     public static void calc() {
         var user = Cli.greeting();
         var j = 0;
+        int end = 3;
         Scanner scanner = new Scanner(System.in);
         System.out.println("What is the result of the expression?");
-        while (j < 3) {
+        while (j < end) {
             Random random = new Random();
-            int ch1 = random.nextInt(100);
-            int ch2 = random.nextInt(100);
+            int randomend  = 100;
+            int ch1 = random.nextInt(randomend);
+            int ch2 = random.nextInt(randomend);
             String operators = "+-*";
             int ch = 0;
             char op = operators.charAt(random.nextInt(operators.length()));
@@ -37,7 +39,7 @@ public class GameCalc {
                 break;
             }
         }
-        if (j == 3) {
+        if (j == end) {
             System.out.println("Congratulations, " + user + "!");
         }
     }

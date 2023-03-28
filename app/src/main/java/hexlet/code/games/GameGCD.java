@@ -9,12 +9,14 @@ public class GameGCD {
     public static void gcd() {
         var user = Cli.greeting();
         var j = 0;
+        int end = 3;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Find the greatest common divisor of given numbers.");
-        while (j < 3) {
+        while (j < end) {
             Random random = new Random();
-            int ch1 = random.nextInt(1, 100);
-            int ch2 = random.nextInt(1, 100);
+            int randomend = 100;
+            int ch1 = random.nextInt(1, randomend);
+            int ch2 = random.nextInt(1, randomend);
             System.out.println("Question: " + ch1 + " " + ch2);
             var ch = gcd2(ch1, ch2);
             System.out.print("Your answer: ");
@@ -28,7 +30,7 @@ public class GameGCD {
                 break;
             }
         }
-        if (j == 3) {
+        if (j == end) {
             System.out.println("Congratulations, " + user + "!");
         }
     }

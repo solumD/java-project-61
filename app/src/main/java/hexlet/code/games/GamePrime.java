@@ -7,11 +7,13 @@ public class GamePrime {
     public static void prime() {
         var user = Cli.greeting();
         var j = 0;
+        int end = 3;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
-        while (j < 3) {
+        while (j < end) {
             Random random = new Random();
-            var ch = random.nextInt(1, 100);
+            int randomend = 100;
+            var ch = random.nextInt(1, randomend);
             var li = isPrime(ch);
             System.out.print("Your answer: ");
             String answer = scanner.next();
@@ -34,7 +36,7 @@ public class GamePrime {
                 break;
             }
         }
-        if (j == 3) {
+        if (j == end) {
             System.out.println("Congratulations, " + user + "!");
         }
     }

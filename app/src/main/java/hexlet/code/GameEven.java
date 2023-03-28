@@ -7,9 +7,11 @@ public class GameEven {
         var user = Cli.greeting();
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         var j = 0;
-        while (j < 3) {
+        int end = 3;
+        while (j < end) {
             Random random = new Random();
-            int ch = random.nextInt(100);
+            int randomend = 100;
+            int ch = random.nextInt(randomend);
             var diff = ch % 2;
             System.out.println("Question: " + ch);
             System.out.print("Your answer: ");
@@ -35,7 +37,7 @@ public class GameEven {
             }
 
         }
-        if (j == 3) {
+        if (j == end) {
             System.out.println("Congratulations, " + user + "!");
         }
     }
