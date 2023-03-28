@@ -7,18 +7,18 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GameProgression {
-    public static int end = 3;
-    public static int fakeend = 5;
-    public static int randomend = 100;
-    public static int shstart = 7;
-    public static int ch1start = 5;
     public static void progression() {
         var user = Cli.greeting();
         var j = 0;
+        final int end = 3;
+        int fakeend = 5;
         Scanner scanner = new Scanner(System.in);
         System.out.println("What number is missing in the progression?");
         while (j < end) {
             Random random = new Random();
+            final int randomend = 100;
+            final int shstart = 7;
+            final int ch1start = 5;
             int ch1 = random.nextInt(ch1start, randomend);
             int sh = random.nextInt(shstart, randomend);
             String[] numbers = new String[sh];

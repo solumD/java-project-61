@@ -4,16 +4,15 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GameCalc {
-    public static int end = 3;
-    public static int randomend  = 100;
-
     public static void calc() {
         var user = Cli.greeting();
         var j = 0;
+        final int end = 3;
         Scanner scanner = new Scanner(System.in);
         System.out.println("What is the result of the expression?");
         while (j < end) {
             Random random = new Random();
+            final int randomend  = 100;
             int ch1 = random.nextInt(randomend);
             int ch2 = random.nextInt(randomend);
             String operators = "+-*";

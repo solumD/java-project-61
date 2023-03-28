@@ -4,15 +4,15 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class GamePrime {
-    public static int end = 3;
-    public static int randomend = 100;
     public static void prime() {
         var user = Cli.greeting();
         var j = 0;
+        final int end = 3;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
         while (j < end) {
             Random random = new Random();
+            final int randomend = 100;
             var ch = random.nextInt(1, randomend);
             var li = isPrime(ch);
             System.out.print("Your answer: ");

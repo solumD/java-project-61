@@ -3,15 +3,15 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GameEven {
-    public static int end = 3;
-    public static int randomend = 100;
     public static void even() {
         var user = Cli.greeting();
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         var j = 0;
+        final int end = 3;
         while (j < end) {
             Random random = new Random();
-            int ch = random.nextInt(randomend);
+            final int randomend = 100;
+            final int ch = random.nextInt(randomend);
             var diff = ch % 2;
             System.out.println("Question: " + ch);
             System.out.print("Your answer: ");

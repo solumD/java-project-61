@@ -6,15 +6,15 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GameGCD {
-    public static int end = 3;
-    public static int randomend = 100;
     public static void gcd() {
         var user = Cli.greeting();
         var j = 0;
+        final int end = 3;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Find the greatest common divisor of given numbers.");
         while (j < end) {
             Random random = new Random();
+            final int randomend = 100;
             int ch1 = random.nextInt(1, randomend);
             int ch2 = random.nextInt(1, randomend);
             System.out.println("Question: " + ch1 + " " + ch2);
